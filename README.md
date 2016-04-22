@@ -22,7 +22,7 @@ To test the application run the following commands :
 
 # Test The Application
 
-After grund finished to build successfully, open dist/index.html in a browser.
+After grunt finished to build successfully, open dist/index.html in a browser.
 
 # Test The Application without Maven/Bower/Grunt
 
