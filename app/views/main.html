@@ -1,0 +1,320 @@
+<div id="cover">
+  <div class="caption center-full">
+    <div class="logo center-full">
+      <img class="center-full" src="images/logos/logo-fr.png" alt="Logo la Passerelle des Corton" /><br />  
+    </div>
+  </div>
+  <jc-carousel-light class="owl-carousel">
+    <div class="cover cover1"></div>
+    <div class="cover cover2"></div>
+    <div class="cover cover3"></div>
+    <div class="cover cover4"></div>
+    <div class="cover cover5"></div>
+    <div class="cover cover6"></div>
+  </jc-carousel-light>
+</div>
+<div class="main">
+  <div class="container">
+    <section class="booking-form">
+      <div class="row">
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="bookingDateIn">Date d'arrivée :</label>
+            <div class='input-group date' id='bookingDateIn'>
+                <input ng-model="booking.dateIn" 
+                  datetimepicker datetimepicker-options="{{datepickerOptions}}" 
+                  type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="fa fa-calendar">
+                    </span>
+                </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bookingDateOut">Date de départ :</label>
+            <div class='input-group date' id='bookingDateOut'>
+                <input ng-model="booking.dateOut" 
+                  datetimepicker datetimepicker-options="datepickerOptions" 
+                  type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="fa fa-calendar">
+                    </span>
+                </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Nombre de personnes :</label>
+            <select class="form-control">
+              <option>1 adulte</option>
+              <option>2 adultes</option>
+            </select>
+            <select class="form-control">
+              <option>0 enfant</option>
+              <option>1 enfant</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>&nbsp;</label>
+            <button type="submit" class="btn btn-warning">Réserver</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+  <section class="intro clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="frame clearfix">
+          <div class="col-md-6 text-center intro-text">
+            <h4>Bienvenue en Côte d'Or</h4>
+            <p>
+              Aux Portes de Beaune, <strong>la Passerelle des Corton</strong> vous accueille sur la
+                <a href="http://fr.wikipedia.org/wiki/Route_des_Grands_Crus" target="_blank">Route des Grands Crus</a>
+                pour un séjour riche en découverte des vignobles.
+                <br>
+                Ses chambres d'hôtes de charme sont idéalement situées au coeur des vignes, face au
+                <a href="http://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Corton_Andr%C3%A9" target="_blank">Château d'Aloxe-Corton</a>.
+            </p>
+          </div>
+          <div class="col-md-6 intro-img clearfix">
+            <img src="images/photos/balcon.jpg">
+          </div>
+        </div>
+      </div>    
+    </div>
+  </section>
+  <section id="rooms" class="clearfix">
+    <div class="container"><h2 class="block-title">Nos Chambres</h2></div>
+    <div class="container carousel-container">
+      <!-- Carousel rooms--> 
+      <jc-carousel class="owl-carousel">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6 room-desc">
+              <h2> <a href="#">Chambre Premier Cru </a><br /><small>96€ / nuit TTC</small></h2>
+              <div class="ul-margins clearfix">
+                <ul class="ul-block col-sm-6">
+                  <li><i class="fa fa-clock-o" aria-hidden="true"></i> Arrivée à partir de 16h</li>
+                  <li><i class="fa fa-clock-o" aria-hidden="true"></i> Départ avant 11h</li>
+                  <li><i class="fa fa-wifi" aria-hidden="true"></i> Wifi gratuit</li>
+                  <li><i class="fa fa-coffee" aria-hidden="true"></i> Petit déjeuner buffet inclus</li>
+                  <li><i class="fa fa-car" aria-hidden="true"></i> Parking gratuit</li>
+                  <li><i class="fa fa-coffee" aria-hidden="true"></i> Café ou thé en libre service</li>
+                  <li><i class="fa fa-info-circle" aria-hidden="true"></i> Fer à repasser sur demande</li>
+                </ul>
+                <ul class="ul-block col-sm-6">
+                  <li><i class="fi-font fi-no-smoking" aria-hidden="true"></i> Chambre non fumeur</li>
+                  <li><i class="fa fa-bed" aria-hidden="true"></i> Grand lit double</li>
+                  <li><i class="fa fa-eye" aria-hidden="true"></i> Vue sur le Château d'Aloxe-Corton</li>
+                  <li><i class="fa fa-television" aria-hidden="true"></i> Télévision</li>
+                  <li><i class="fa fa-info-circle" aria-hidden="true"></i> Sèche-cheveux</li>
+                  <li><i class="fi-font fi-male-female" aria-hidden="true"></i> Toilettes privatives séparées</li>
+                  <li><i class="fi-font fi-no-dogs" aria-hidden="true"></i> Animaux non acceptés</li>
+                </ul>
+              </div>
+              <p><a href="#" class="btn btn-warning">En savoir plus</a></p>
+            </div>
+            <div class="col-md-6 room-img text-center">
+              <div class="row"><a href="#"><img src="images/photos/chambres/chbe_premier_cru.jpg" alt="Photo chambre Premier Cru"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6 room-desc">
+              <h2> <a href="#">Chambre Grand Cru </a><br /><small>96€ / nuit TTC</small></h2>
+              <div class="ul-margins clearfix">
+                <ul class="ul-block col-sm-6">
+                  <li><i class="fa fa-clock-o" aria-hidden="true"></i> Arrivée à partir de 16h</li>
+                  <li><i class="fa fa-clock-o" aria-hidden="true"></i> Départ avant 11h</li>
+                  <li><i class="fa fa-wifi" aria-hidden="true"></i> Wifi gratuit</li>
+                  <li><i class="fa fa-coffee" aria-hidden="true"></i> Petit déjeuner buffet inclus</li>
+                  <li><i class="fa fa-car" aria-hidden="true"></i> Parking gratuit</li>
+                  <li><i class="fa fa-coffee" aria-hidden="true"></i> Café ou thé en libre service</li>
+                  <li><i class="fa fa-info-circle" aria-hidden="true"></i> Fer à repasser sur demande</li>
+                </ul>
+                <ul class="ul-block col-sm-6">
+                  <li><i class="fi-font fi-no-smoking" aria-hidden="true"></i> Chambre non fumeur</li>
+                  <li><i class="fa fa-bed" aria-hidden="true"></i> Grand lit double</li>
+                  <li><i class="fa fa-eye" aria-hidden="true"></i> Vue sur le Château d'Aloxe-Corton</li>
+                  <li><i class="fa fa-television" aria-hidden="true"></i> Télévision</li>
+                  <li><i class="fa fa-info-circle" aria-hidden="true"></i> Sèche-cheveux</li>
+                  <li><i class="fi-font fi-male-female" aria-hidden="true"></i> Toilettes privatives séparées</li>
+                  <li><i class="fi-font fi-no-dogs" aria-hidden="true"></i> Animaux non acceptés</li>
+                </ul>
+              </div>
+              <p><a href="#" class="btn btn-warning">En savoir plus</a></p>
+            </div>
+            <div class="col-md-6 room-img text-center">
+              <div class="row"><a href="#"><img src="images/photos/chambres/chbe-grand-cru2.jpg" alt="Photo chambre Premier Cru"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6 room-desc">
+              <h2> <a href="#">Chambre Corton Charlemagne </a><br /><small>110€ / nuit TTC</small></h2>
+              <div class="ul-margins clearfix">
+                <ul class="ul-block col-sm-6">
+                  <li><i class="fa fa-clock-o" aria-hidden="true"></i> Arrivée à partir de 16h</li>
+                  <li><i class="fa fa-clock-o" aria-hidden="true"></i> Départ avant 11h</li>
+                  <li><i class="fa fa-wifi" aria-hidden="true"></i> Wifi gratuit</li>
+                  <li><i class="fa fa-coffee" aria-hidden="true"></i> Petit déjeuner buffet inclus</li>
+                  <li><i class="fa fa-car" aria-hidden="true"></i> Parking gratuit</li>
+                  <li><i class="fa fa-coffee" aria-hidden="true"></i> Café ou thé en libre service</li>
+                  <li><i class="fa fa-info-circle" aria-hidden="true"></i> Fer à repasser sur demande</li>
+                </ul>
+                <ul class="ul-block col-sm-6">
+                  <li><i class="fi-font fi-no-smoking" aria-hidden="true"></i> Chambre non fumeur</li>
+                  <li><i class="fa fa-bed" aria-hidden="true"></i> 2 Lits jumeaux ou grand lit double</li>
+                  <li><i class="fa fa-info-circle" aria-hidden="true"></i> Douche et baignoire</li>
+                  <li><i class="fa fa-television" aria-hidden="true"></i> Télévision</li>
+                  <li><i class="fa fa-info-circle" aria-hidden="true"></i> Sèche-cheveux</li>
+                  <li><i class="fi-font fi-male-female" aria-hidden="true"></i> Toilettes privatives séparées</li>
+                  <li><i class="fi-font fi-no-dogs" aria-hidden="true"></i> Animaux non acceptés</li>
+                </ul>
+              </div>
+              <p><a href="#" class="btn btn-warning">En savoir plus</a></p>
+            </div>
+            <div class="col-md-6 room-img text-center">
+              <div class="row"><a href="#"><img src="images/photos/chambres/chbe_premier_cru2.jpg" alt="Photo chambre Premier Cru"></a></div>
+            </div>
+          </div>
+        </div>
+      </jc-carousel>
+        
+    </div>
+  </section>
+  <section id="tourism">
+    <div class="container">
+      <div class="row center-block">
+        <div class="discover col-sm-6 col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3><i class="fa fa-bicycle" aria-hidden="true"></i></h3>
+              <p class="lead">Les vignes</p>
+              <p>Partez à la découverte des vignobles les bnlvgn sgnljgr qefejnfe qlefjjefn qjzbjegb ebjvebdjv</p>
+            </div>
+          </div>
+        </div>
+        <div class="discover col-sm-6 col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3><i class="fa fa-glass" aria-hidden="true"></i></h3>
+              <p class="lead">Le vin</p>
+              <p>Dégustez les meilleurs vins de la région bnlvgn sgnljgr qefejnfe qlefjjefn qjzbjegb ebjvebdjv</p>
+            </div>
+          </div>
+        </div>
+        <div class="discover col-sm-6 col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h3><i class="fa fa-camera" aria-hidden="true"></i></h3>
+              <p class="lead">Sites d'exception</p>
+              <p>Découvrez les hospices de Beaune et les nombreuses caves bnlvgn sgnljgr qefejnfe qlefjjefn qjzbjegb ebjvebdjv</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container"><h2 class="block-title">Contact</h2></div>
+    <div class="container">
+      <div class="row">
+        <div class="map col-sm-6">
+          <ng-map zoom="12" center="[47.05, 4.84]" scrollwheel="false" style="height:423px">
+            <marker position="12 Rue des Corton Aloxe-Corton, France"
+              title="12 Rue des Corton Aloxe-Corton, France"</marker>
+          </ng-map>
+        </div>
+        <div class="form col-sm-6">
+          <h4 class="text-center">Nos Coordonnées</h4>
+          <div class="row text-center">
+            <div class="contacts-block">
+              <p><strong><i class="fa fa-map-marker" aria-hidden="true"></i> Adresse : </strong>12 rue des Corton <br> 21420 ALOXE-CORTON - FRANCE
+              </p>
+              <p><strong><i class="fa fa-phone" aria-hidden="true"></i> Téléphone : </strong>+33 (0)9 50 52 63 64
+              </p>
+              <p><strong><i class="fa fa-envelope" aria-hidden="true"></i> E-mail : </strong>passerelledescorton<i class="fa fa-at" aria-hidden="true"></i>gmail.com
+              </p>
+            </div>
+          </div>
+          <h4 class="text-center">Laissez-nous un message</h4>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <div class="col-sm-3 control-label"><label for="bookingDateIn">Nom* :</label></div>
+                <div class="col-sm-9"><input ng-model="contact.name" 
+                      type='text' class="form-control"/></div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3 control-label"><label for="bookingDateIn">E-mail* :</label></div>
+                <div class="col-sm-9"><input ng-model="contact.email" 
+                      type='email' class="form-control" /></div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-3 control-label"><label for="bookingDateIn">Message* :</label></div>
+                <div class="col-sm-9"><textarea class="form-control"></textarea></div>
+              </div>
+              <div class="col-sm-offset-3 col-sm-9"><p class="small">* Champs obligatoires</p></div>
+              <div class="form-group">
+                <div class="col-sm-offset-6 col-sm-6">
+                  <button type="submit" class="btn btn-warning">Envoyer</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="social">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 tile tripadvisor">
+          <div class="row">
+            <div class="col-sm-6 tile-text">
+              <a target="_blank" href="https://www.tripadvisor.fr/Hotel_Review-g4892251-d8352864-Reviews-La_Passerelle_des_Corton-Aloxe_Corton_Beaune_Cote_d_Or_Burgundy.html">
+                <p><i class="fa fa-tripadvisor" aria-hidden="true"></i></p>
+                <p> Découvrez les avis de nos clients sur Trip Advisor</p>
+              </a>
+            </div>
+            <div class="col-sm-6 tile-cover"><div class="img"></div></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 tile facebook">
+          <div class="row">
+            <div class="col-sm-6 tile-text">
+              <a target="_blank" href="http://www.facebook.com/PasserelleCorton">
+                <p><i class="fa fa-facebook" aria-hidden="true"></i></p>
+                <p> Rejoignez-nous sur Facebook </p>
+              </a>
+            </div>
+            <div class="col-sm-6 tile-cover"><div class="img"></div></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 tile twitter">
+          <div class="row">
+            <div class="col-sm-6 tile-cover"><div class="img"></div></div>
+            <div class="col-sm-6 tile-text">
+              <a target="_blank" href="http://twitter.com/ChambresCorton">
+                <p><i class="fa fa-twitter" aria-hidden="true"></i></p>
+                <p>Suivez-nous sur Twitter : @ChambresCorton</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 tile instagram">
+          <div class="row">
+            <div class="col-sm-6 tile-cover"><div class="img"></div></div>
+            <div class="col-sm-6 tile-text">
+              <a target="_blank" href="http://instagram.com/passerelledescorton">
+                <p><i class="fa fa-instagram" aria-hidden="true"></i></p>
+                <p>Suivez-nous sur Instagram : @passerelledescorton</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

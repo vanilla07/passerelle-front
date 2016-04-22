@@ -1,0 +1,798 @@
+/* general */
+html, body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #2d2d2d;
+}
+
+body {
+	position: relative;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+a, a:hover {
+	color: #f6a202;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+i.fi-font {
+	font-size: 23px;
+}
+
+.input-group-addon, .form-control {
+	border-radius: 2px;
+	height: 30px;
+}
+
+.btn {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.input-group.date .input-group-addon {
+    cursor: auto;
+}
+
+/* Owl Carousel */
+.owl-prev, .owl-next {
+	position: absolute;
+    top: 40%;
+    padding: 10px;
+    font-size: 35px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 80;
+}
+.owl-prev:hover, .owl-next:hover {
+	background-color: #eea236;	
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
+.owl-prev{
+    left: -15px;
+}
+.owl-next {	
+    right: 0px;
+}
+
+/* header */
+header.sticky {
+  	background-color: #222;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	background-color: rgba(1, 1, 1, 0.5);
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+header.sticky .navbar {
+  	padding-left: 20px;
+  	border: 0;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #ddd;
+}
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #E68200;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+    background-color: rgba(50, 50, 50, 0.80);
+}
+
+header.sticky .navbar-inverse .navbar-nav > li > a {
+    padding: 16px;
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
+
+header.sticky .navbar-brand {
+	padding: 0;
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
+
+span.logo-header {
+    background: transparent url('../images/logos/logo_base_lighter.png') no-repeat left center;
+    background-size: contain;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 65px;
+    color: #fff;
+    filter: alpha(opacity=0.8);
+    opacity: 0.8;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.8);
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 20ms;
+    -o-transition: all 200ms;
+    -ms-transition: all 200ms;
+    transition: all 200ms;
+}
+
+span.logo-header:hover {
+	filter: alpha(opacity=1);
+    opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=1);
+}
+
+.navbar {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #DEDEDE;
+	font-size: 13px;
+	padding: 10px 15px;
+}
+
+.navbar-brand > img{
+	height: 100px;
+    display: inline;
+}
+
+.navbar-inverse {
+    background-color: inherit;
+    border: 0;
+    border-bottom: 1px solid rgba(235,235,235,0.5);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #DEDEDE;
+    padding: 25px;
+}
+
+/* End header */
+/* Start main */
+
+h2.block-title {
+	padding: 10px 20px;
+    display: block;
+    font-size: 1.17em;
+    color: #fff;
+    background-color: #555;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+div#cover {
+	position: relative;
+	height: 650px;
+	width: 100%;
+}
+
+.cover1 {
+	background: #ccc url('../images/photos/maison-automne3.jpg') no-repeat center center;
+}
+
+.cover2 {
+	background: #ccc url('../images/photos/jardin2.jpg') no-repeat center center;
+}
+
+.cover3 {
+	background: #ccc url('../images/photos/maison-automne.jpg') no-repeat center center;
+}
+
+.cover4 {
+	background: #ccc url('../images/photos/maison-arriere-chateau.jpg') no-repeat center center;
+}
+
+.cover5 {
+	background: #ccc url('../images/photos/maison-automne2.jpg') no-repeat center center;
+}
+
+.cover6 {
+	background: #ccc url('../images/photos/aerien.jpg') no-repeat right bottom;
+}
+
+.cover {
+	text-align: center;
+	background-size: cover;
+	height: 650px;
+	position: relative;
+}
+
+.center-full {
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+#cover .caption {
+	z-index: 10;
+	background-color: rgba(1, 1, 1, 0.5);
+	max-height: 260px;
+	max-width: 510px;
+	    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#cover .caption .logo {
+	height: 80%;
+	width: 90%;
+	border: 1px solid rgba(235,235,235,0.5);
+}
+
+#cover .caption .logo img {
+    display: block;
+    width: 70%;
+}
+
+.main, .main section {
+	position: relative;
+}
+
+/* Booking form */
+
+.main section.booking-form {
+    margin-top: -70px;
+    z-index: 80 !important;
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 20px 70px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 20px #000;
+}
+
+.main section.booking-form form {
+	text-align: center;
+}
+
+.main section.booking-form label {
+	display: block;
+	text-align: left;
+	font-size: 13px;
+}
+
+.main section.booking-form .form-group {
+	margin: 0 7px;
+}
+
+/* Message Intro */
+
+.main section.intro {
+	color: #ddd;
+	margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main .frame {
+    min-height: 100px;
+    padding: 0;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+}
+
+.main .frame:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  bottom: 0px;
+  left: 0px;
+  border: 1px solid rgba(235,235,235,0.8);
+}
+
+.main section.intro .intro-img { 
+	margin: -25px -25px -25px 0px;
+	position: static;
+	padding: 0;
+	overflow: hidden;
+}
+
+.main section.intro .intro-img img { 
+	display: block;
+	max-height: 360px;
+    margin: 0 0 0 -110px;
+}
+
+.main section.intro .intro-text {
+	text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+	padding: 40px;
+}
+.main section.intro .intro-text p{
+	margin-top: 35px;
+}
+.main section.intro .intro-text h4{
+	margin-top: 10px;
+}
+
+/* Rooms carousel */
+
+.main section#rooms a:hover{
+	text-decoration: none;
+}
+
+.main section#rooms {
+	padding-top: 90px;
+	padding-bottom: 90px;
+	background-color: #eee;
+}
+
+.main section#rooms .carousel-container {
+	padding-right: 0;
+	background-color: #2d2d2d;
+}
+
+.main section#rooms .room-desc {
+	color: #efefef;
+    line-height: 19px;
+    background-color: #2D2D2D;
+}
+
+.main section#rooms .ul-margins {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.main section#rooms ul.ul-block {
+    display: inline-block;
+}
+
+.main section#rooms ul.ul-block li i {
+	display: inline-block;
+    margin-left: -25px;
+    vertical-align: middle;
+    width: 25px;
+}
+
+.main section#rooms ul.ul-block li {
+	text-align: left;
+    display: block;
+    margin-left: 30px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.main section#rooms .room-img {
+	overflow: hidden;
+}
+
+.main section#rooms .room-img img {
+	display: inline-block;
+	max-height: 400px;
+}
+/* End Rooms */
+
+.main section#tourism {
+	background: transparent url('../images/photos/vignes-ete2-voile.jpg') fixed left center;
+    background-size: cover;
+}
+
+.main section#tourism .row {
+	margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main section#tourism .discover{
+	text-align: center;
+	padding: 20px;
+}
+
+.main section#tourism .discover .panel {
+	min-height: 220px;
+	margin-top: 20px;
+}
+
+/* contact */
+.main section#contact {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.main section#contact .container>div.row {
+    background-color: white;
+}
+
+.main section#contact .form {
+    padding: 20px;
+    min-height: 423px;
+}
+
+.main section#contact .form .contacts-block {
+    display: inline-block;
+}
+.main section#contact .form .contacts-block p {
+    margin-left: 113px;
+    text-align: left;
+}
+.main section#contact .form .contacts-block p strong {
+	display: inline-block;
+    width: 113px;
+    margin-left: -113px;
+}
+.main section#contact .form-group {
+    margin-bottom: 5px;
+}
+
+
+.main section#contact .map{
+    padding: 0;
+}
+
+/* social */
+.main section#social .container, 
+.main section#social .row,
+.main section#social .tile,
+.main section#social .tile .tile-text,
+.main section#social .tile .tile-cover {
+	margin: 0;
+	padding: 0;
+}
+
+.main section#social .container {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.main section#social .fa {
+	font-size: 40px;
+}
+
+.main section#social a {
+	color: #fff;
+}
+
+.main section#social a:hover {
+	text-decoration: none;
+}
+
+.main section#social .tripadvisor {
+	background-color: rgba(75, 175, 80, 0.7);
+}
+.main section#social .instagram {
+	background-color: rgba(65, 115, 155, 0.7);
+}
+.main section#social .facebook {
+	background-color: rgba(60, 80, 180, 0.7);
+}
+.main section#social .twitter {
+	background-color: rgba(0, 190, 210, 0.7);
+}
+
+.main section#social .tile .tile-text {
+	padding-right: 8%;
+	padding-left: 8%;
+	height: 220px;
+	line-height: 220px;
+	display: block;
+	vertical-align: middle;
+}
+
+.main section#social .tile .tile-text a {
+	vertical-align:middle;
+	display:inline-block;
+	line-height:1.2;
+}
+
+.main section#social .tile .tile-cover .img {
+	background-size: cover;
+    background-position-y: center;
+    min-height: 220px;
+    width: 100%;
+    display: block;
+}
+
+.main section#social .facebook .tile-cover .img {
+	background-image: url('../images/photos/cave.jpg');
+}
+.main section#social .instagram .tile-cover .img {
+	background-image: url('../images/photos/vignes-automne2.jpg');
+}
+.main section#social .twitter .tile-cover .img{
+	background-image: url('../images/photos/cave2.jpg');
+}
+.main section#social .tripadvisor .tile-cover .img{
+	background-image: url('../images/photos/bouchon-vin.jpg');
+}
+
+/* footer */
+
+footer {
+	background-color: #222;
+}
+
+footer .container {
+    color: #efefef;
+    font-size: 15px;
+    padding: 40px;
+}
+
+footer .container .row > div {
+	margin-top: 20px;
+}
+
+#otBeaune {
+	width: 200px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin-top: 15px;
+}
+
+footer ul.social li {
+	text-align: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+footer ul.social li a {
+	border: 1px solid #d0d0d0;
+    border-radius: 44px;
+    color: #fff;
+    font-size: 20px;
+    height: 44px;
+    width: 44px;
+    position: relative;
+    display: inline-block;
+}
+
+footer ul.social li a i {
+    color: #fff;
+    height: 100%;
+    left: 0;
+    line-height: 42px;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: 10;
+}
+
+footer ul.social li a span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 0;
+}
+
+footer ul.social li a:hover span {
+	border-radius: 44px;
+	width: 44px;
+	height: 44px;
+	top: -1px;
+	left: -1px;
+	right: 0;
+	bottom: 0;
+}
+
+footer ul.contact{
+    display: inline-block;
+}
+
+footer ul.contact li i {
+	display: inline-block;
+    font-size: 22px;
+    margin-left: -30px;
+    vertical-align: middle;
+    width: 30px;
+}
+
+footer ul.contact li {
+	text-align: left;
+    display: block;
+    margin-left: 40px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer ul.contact li a {	
+ 	word-break: break-all;
+}
+
+footer ul.social li.link-facebook a:hover span {
+	background-color: #3b5998;	
+	border: 1px solid #3b5998;
+} 
+
+footer ul.social li.link-instagram a:hover span {
+	background-color: #3f729b;	
+	border: 1px solid #3f729b;
+}
+
+footer ul.social li.link-twitter a:hover span {
+	background-color: #55acee;	
+	border: 1px solid #55acee;
+}
+
+footer .separator {
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+
+footer .tooltip-inner {
+	background-color: #555;
+	color: white;
+	font-weight: bold;
+}
+footer .tooltip.bottom .tooltip-arrow {
+	border-bottom-color: #555;
+}
+
+/* other media screens */
+
+@media (max-width: 990px) {
+	.navbar > .container .navbar-brand {		
+		padding: 0;
+	}
+
+	.navbar-inverse .navbar-nav > li > a,
+	header.sticky .navbar-inverse .navbar-nav > li > a {
+		padding: 5px;
+	    font-size: 12px;
+	    line-height: 40px;
+	}
+
+	.main .frame:before {
+	  position: relative;
+	  border: 0;
+	}
+
+	.main .frame {
+		width: 80%;
+ 		border: 1px solid white;
+	}
+
+	.main section.intro {
+		padding: 0;
+	}
+
+	.main section.intro .intro-img { 
+		margin: 0;
+	}
+
+	.main section.intro .intro-img img { 
+		display: block;
+		max-height: 100%;
+		width: 100%;
+	    margin: 0;
+	}
+
+	.main section.intro .intro-text {
+		padding: 20px;
+	}
+	.main section.intro .intro-text p{
+		margin-top: 15px;
+	}
+	.main section.intro .intro-text h3{
+		margin-top: 5px;
+	}
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+	#cover .caption {
+	    max-height: 160px;
+	    max-width: 300px;
+	}
+
+	div#cover {
+		height: 350px;
+	}
+
+	.cover {
+		height: 350px;
+	}
+
+	.main .frame {
+		width: 100%;
+	}
+
+}
+
+/* button back to top */
+div#btn-up {
+    width: 45px;
+    height: 45px;
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    text-align: center;
+    z-index: 9999;
+    background-color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    box-shadow: 1px 1px 12px #333;
+    filter: alpha(opacity=0.7);
+    opacity: 0.7;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.7);
+}
+
+div:hover#btn-up {
+	cursor: pointer;
+	color: #000;
+	filter: alpha(opacity=1);
+    opacity: 1;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=1);
+}
