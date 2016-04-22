@@ -127,7 +127,9 @@ module.exports = function (grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/scripts/{,*/}*.js',
+          '!<%= yeoman.app %>/scripts/owl.carousel.min.js',
+          '!<%= yeoman.app %>/scripts/angular-bootstrap-datetimepicker-directive.js'
         ]
       },
       test: {
@@ -147,7 +149,9 @@ module.exports = function (grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          '<%= yeoman.app %>/scripts/{,*/}*.js',
+          '!<%= yeoman.app %>/scripts/owl.carousel.min.js',
+          '!<%= yeoman.app %>/scripts/angular-bootstrap-datetimepicker-directive.js'
         ]
       },
       test: {
@@ -338,7 +342,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'passerelle2App',
+          module: 'passerelleApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },

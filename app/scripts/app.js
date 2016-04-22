@@ -69,6 +69,7 @@ angular
   .controller('MainCtrl', ['$scope', '$document', '$location', '$state', function($scope, $document, $location, $state) { 
     var minDate = new Date();
     var dateOut = new Date(minDate.getFullYear(), minDate.getMonth(), minDate.getDate()+1 );
+    
     $scope.booking = {
       dateIn: minDate,
       dateOut: dateOut

@@ -2,10 +2,10 @@
 
 $(window).scroll(function() {
 	if ($(this).scrollTop() > 1){  
-		$('header').addClass("sticky");
+		$('header').addClass('sticky');
 	}
 	else{
-		$('header').removeClass("sticky");
+		$('header').removeClass('sticky');
 	}
 
 	if($(window).scrollTop()<550){
